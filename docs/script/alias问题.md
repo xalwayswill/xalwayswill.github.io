@@ -1,0 +1,1 @@
+.shrc或者.cshrc之类的文件设置的alias都只是用于交互式环境，也就是terminal中使用，运行脚本时属于非交互式环境（如makefile），因此设置的alias无效，可通过使用shopt命令支持expand_aliases才行，但是感觉还是输入完整的命令更加安全。

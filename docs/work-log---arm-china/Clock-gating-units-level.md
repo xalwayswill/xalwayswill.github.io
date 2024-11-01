@@ -1,0 +1,1 @@
+在vsync的下降沿去采样module_en

@@ -1,0 +1,1 @@
+Anaconda选择对应的python版本安装，最好选择高于自己所需要环境python版本的，然后创建环境，设置python版本，安装tf，tf版本可直接通过 `conda install tensorflow`进行安装，如果要安装gpu版本就输入对应的gpu版本号。之后安装jupyter notebook，在vscode中安装python插件后，打开py文件，左下角可选择对应的conda环境，如果插件提示缺少pylint，可直接按照提示install。安装后打开jupyter文件可在右上角选择对应的conda环境。
