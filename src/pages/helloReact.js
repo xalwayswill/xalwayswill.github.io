@@ -13,7 +13,7 @@ export default function Hello() {
           fontSize: '20px',
         }}>
         <p>
-          修改 <code>pages/helloReact.js</code>，然后保存，页面会重载。
+          辣鸡，敢不敢搭建自己的网站
         </p>
       </div>
     </Layout>
