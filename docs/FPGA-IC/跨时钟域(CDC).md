@@ -6,9 +6,9 @@
 [面试必杀技：异步FIFO -- CDC的那些事（5）](https://aijishu.com/a/1060000000146410)
 [干货大放送之CDC工程经验总结--CDC的那些事（6）完结篇](https://aijishu.com/a/1060000000146591)
 [https://zhuanlan.zhihu.com/p/146418485](https://zhuanlan.zhihu.com/p/146418485)
-![](跨时钟域(CDC).assets\23495115-25fafb6648aee6d8.png)
 **[synchronizer-techniques-for-multi-clock-domain-socs-fpgas](https://www.edn.com/synchronizer-techniques-for-multi-clock-domain-socs-fpgas)**
 “three edge” require
+![](跨时钟域(CDC).assets\23495115-25fafb6648aee6d8.png)
 ## 亚稳态
 亚稳态是指信号在正常运行的某些时间点上，不能稳定的判定为0或1的状态
 在多个时钟域的设计中，亚稳态无法避免，但是亚稳态的有害影响可以被规避掉
