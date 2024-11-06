@@ -1,12 +1,13 @@
 ## Reference
-[跟老李一起学习芯片设计-- CDC的那些事（1）](https://aijishu.com/a/1060000000145145)
-[你真的懂2-flop synchronizer吗-- CDC的那些事（2）](https://aijishu.com/a/1060000000145558)
-[常见数电面试题Pulse Synchronizer -- CDC的那些事（3）](https://aijishu.com/a/1060000000145898)
-[多bit信号跨时钟域怎么办？ -- CDC的那些事（4）](https://aijishu.com/a/1060000000146119)
-[面试必杀技：异步FIFO -- CDC的那些事（5）](https://aijishu.com/a/1060000000146410)
-[干货大放送之CDC工程经验总结--CDC的那些事（6）完结篇](https://aijishu.com/a/1060000000146591)
-[https://zhuanlan.zhihu.com/p/146418485](https://zhuanlan.zhihu.com/p/146418485)
-**[synchronizer-techniques-for-multi-clock-domain-socs-fpgas](https://www.edn.com/synchronizer-techniques-for-multi-clock-domain-socs-fpgas)**
+1. [SpyGlass_CDC_Training_Slides](https://picture.iczhiku.com/resource/eetop/sykwDewDhYJwSNMC.pdf)
+2. [跟老李一起学习芯片设计-- CDC的那些事（1）](https://aijishu.com/a/1060000000145145)
+3. [你真的懂2-flop synchronizer吗-- CDC的那些事（2）](https://aijishu.com/a/1060000000145558)
+4. [常见数电面试题Pulse Synchronizer -- CDC的那些事（3）](https://aijishu.com/a/1060000000145898)
+5. [多bit信号跨时钟域怎么办？ -- CDC的那些事（4）](https://aijishu.com/a/1060000000146119)
+6. [面试必杀技：异步FIFO -- CDC的那些事（5）](https://aijishu.com/a/1060000000146410)
+7. [干货大放送之CDC工程经验总结--CDC的那些事（6）完结篇](https://aijishu.com/a/1060000000146591)
+8. [https://zhuanlan.zhihu.com/p/146418485](https://zhuanlan.zhihu.com/p/146418485)
+9. **[synchronizer-techniques-for-multi-clock-domain-socs-fpgas](https://www.edn.com/synchronizer-techniques-for-multi-clock-domain-socs-fpgas)**
 “three edge” require
 ![](跨时钟域(CDC).assets\23495115-25fafb6648aee6d8.png)
 ## 亚稳态
