@@ -1,0 +1,24 @@
+{
+  "id": "System-Verilog/线程和通信",
+  "title": "线程和通信",
+  "description": "fork join 并行块",
+  "source": "@site/docs/System-Verilog/线程和通信.md",
+  "sourceDirName": "System-Verilog",
+  "slug": "/System-Verilog/线程和通信",
+  "permalink": "/docs/System-Verilog/线程和通信",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/System-Verilog/线程和通信.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "线程、进程及通信",
+    "permalink": "/docs/System-Verilog/线程、进程及通信"
+  },
+  "next": {
+    "title": "虚函数",
+    "permalink": "/docs/System-Verilog/虚函数"
+  }
+}

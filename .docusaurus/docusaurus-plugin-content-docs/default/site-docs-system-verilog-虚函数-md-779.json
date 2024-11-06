@@ -1,0 +1,24 @@
+{
+  "id": "System-Verilog/虚函数",
+  "title": "虚函数",
+  "description": "SV中的虚函数类似于C/C++中的虚函数",
+  "source": "@site/docs/System-Verilog/虚函数.md",
+  "sourceDirName": "System-Verilog",
+  "slug": "/System-Verilog/虚函数",
+  "permalink": "/docs/System-Verilog/虚函数",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/System-Verilog/虚函数.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "线程和通信",
+    "permalink": "/docs/System-Verilog/线程和通信"
+  },
+  "next": {
+    "title": "2021-01-27",
+    "permalink": "/docs/save this to git code reponsitories/2021-01-27"
+  }
+}

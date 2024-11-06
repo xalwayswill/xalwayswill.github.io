@@ -1,0 +1,24 @@
+{
+  "id": "FPGA-IC/VCS-仿真-VIVADO-IP",
+  "title": "VCS-仿真-VIVADO-IP",
+  "description": "添加IP目录下对应的sim文件，在synopsyssim.setup 中增加VIVADO增对vcs编译产生的器件库中的synopsyssim.setup",
+  "source": "@site/docs/FPGA-IC/VCS-仿真-VIVADO-IP.md",
+  "sourceDirName": "FPGA-IC",
+  "slug": "/FPGA-IC/VCS-仿真-VIVADO-IP",
+  "permalink": "/docs/FPGA-IC/VCS-仿真-VIVADO-IP",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/FPGA-IC/VCS-仿真-VIVADO-IP.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "简介",
+    "permalink": "/docs/FPGA-IC/VCS+Verdi仿真环境的设置及Makefile文件编写"
+  },
+  "next": {
+    "title": "Valid-Ready打拍-TODO：自己整理下",
+    "permalink": "/docs/FPGA-IC/Valid-Ready打拍-TODO：自己整理下"
+  }
+}

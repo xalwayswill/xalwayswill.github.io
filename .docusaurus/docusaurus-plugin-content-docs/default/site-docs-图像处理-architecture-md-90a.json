@@ -1,0 +1,24 @@
+{
+  "id": "图像处理/Architecture",
+  "title": "Architecture",
+  "description": "bayer scaler 在前级bayer域增加一个scaler可以在特定场景下降低图像分辨率，减少后续模块的处理功耗。例如在相机进行预览时使用低分辨率的预览，并将原始分辨率的图像存储在DDR中，当按下快门后从DDR中直接读出原始图像，再按照完整的分辨率进行后续pipeline的处理。",
+  "source": "@site/docs/图像处理/Architecture.md",
+  "sourceDirName": "图像处理",
+  "slug": "/图像处理/Architecture",
+  "permalink": "/docs/图像处理/Architecture",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/图像处理/Architecture.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "5A",
+    "permalink": "/docs/图像处理/5A"
+  },
+  "next": {
+    "title": "DPF",
+    "permalink": "/docs/图像处理/DPF"
+  }
+}

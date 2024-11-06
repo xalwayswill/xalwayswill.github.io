@@ -1,0 +1,24 @@
+{
+  "id": "FPGA-IC/DDR3-简记",
+  "title": "DDR3-简记",
+  "description": "DDR3提高传输速率的原因",
+  "source": "@site/docs/FPGA-IC/DDR3-简记.md",
+  "sourceDirName": "FPGA-IC",
+  "slug": "/FPGA-IC/DDR3-简记",
+  "permalink": "/docs/FPGA-IC/DDR3-简记",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/FPGA-IC/DDR3-简记.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "DC简明教程",
+    "permalink": "/docs/FPGA-IC/DC简明教程"
+  },
+  "next": {
+    "title": "DesignWire",
+    "permalink": "/docs/FPGA-IC/DesignWire"
+  }
+}

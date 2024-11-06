@@ -1,0 +1,24 @@
+{
+  "id": "图像处理/图像预处理校正简介",
+  "title": "1. DPC（Defect Pixel Correction，坏点校正）",
+  "description": "坏点简介",
+  "source": "@site/docs/图像处理/图像预处理校正简介.md",
+  "sourceDirName": "图像处理",
+  "slug": "/图像处理/图像预处理校正简介",
+  "permalink": "/docs/图像处理/图像预处理校正简介",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/图像处理/图像预处理校正简介.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "RGB",
+    "permalink": "/docs/图像处理/图像色域空间"
+  },
+  "next": {
+    "title": "小波变换",
+    "permalink": "/docs/图像处理/小波变换"
+  }
+}

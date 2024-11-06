@@ -1,0 +1,24 @@
+{
+  "id": "FPGA-IC/双调排序Bitonic-Sort",
+  "title": "双调排序Bitonic-Sort",
+  "description": "双调排序是data-independent的排序， 即比较顺序与数据无关的排序方法， 特别适合做并行计算，例如用GPU、fpga来计算。",
+  "source": "@site/docs/FPGA-IC/双调排序Bitonic-Sort.md",
+  "sourceDirName": "FPGA-IC",
+  "slug": "/FPGA-IC/双调排序Bitonic-Sort",
+  "permalink": "/docs/FPGA-IC/双调排序Bitonic-Sort",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/FPGA-IC/双调排序Bitonic-Sort.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "原型验证(Prototyping)",
+    "permalink": "/docs/FPGA-IC/原型验证(Prototyping)"
+  },
+  "next": {
+    "title": "后端",
+    "permalink": "/docs/FPGA-IC/后端"
+  }
+}

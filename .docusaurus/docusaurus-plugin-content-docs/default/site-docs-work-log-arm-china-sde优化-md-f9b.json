@@ -1,0 +1,24 @@
+{
+  "id": "work-log---arm-china/SDE优化",
+  "title": "SDE优化",
+  "description": "Saturation adjust：UV单独计算，UV的值也就代表了图像饱和度",
+  "source": "@site/docs/work-log---arm-china/SDE优化.md",
+  "sourceDirName": "work-log---arm-china",
+  "slug": "/work-log---arm-china/SDE优化",
+  "permalink": "/docs/work-log---arm-china/SDE优化",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/work-log---arm-china/SDE优化.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "RNR-WAVELET中的优化",
+    "permalink": "/docs/work-log---arm-china/RNR-WAVELET中的优化"
+  },
+  "next": {
+    "title": "YNR-优化",
+    "permalink": "/docs/work-log---arm-china/YNR-优化"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "FPGA-IC/Register",
+  "title": "Register",
+  "description": "Reference",
+  "source": "@site/docs/FPGA-IC/Register.md",
+  "sourceDirName": "FPGA-IC",
+  "slug": "/FPGA-IC/Register",
+  "permalink": "/docs/FPGA-IC/Register",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/FPGA-IC/Register.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "RAM-三种模式",
+    "permalink": "/docs/FPGA-IC/RAM-三种模式"
+  },
+  "next": {
+    "title": "SPI四种工作模式",
+    "permalink": "/docs/FPGA-IC/SPI四种工作模式"
+  }
+}

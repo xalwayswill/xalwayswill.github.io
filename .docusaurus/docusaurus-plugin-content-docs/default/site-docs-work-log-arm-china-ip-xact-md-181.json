@@ -1,0 +1,24 @@
+{
+  "id": "work-log---arm-china/IP-XACT",
+  "title": "IP-XACT",
+  "description": "MIP(Magillem IP packager) MRV(Magillem Register View)",
+  "source": "@site/docs/work-log---arm-china/IP-XACT.md",
+  "sourceDirName": "work-log---arm-china",
+  "slug": "/work-log---arm-china/IP-XACT",
+  "permalink": "/docs/work-log---arm-china/IP-XACT",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/work-log---arm-china/IP-XACT.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Exp-Golomb-指数哥伦布编码",
+    "permalink": "/docs/work-log---arm-china/Exp-Golomb-指数哥伦布编码"
+  },
+  "next": {
+    "title": "LSC",
+    "permalink": "/docs/work-log---arm-china/LSC"
+  }
+}

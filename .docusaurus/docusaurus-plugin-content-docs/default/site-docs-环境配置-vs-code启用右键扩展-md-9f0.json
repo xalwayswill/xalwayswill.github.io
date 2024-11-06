@@ -1,0 +1,24 @@
+{
+  "id": "环境配置/VSCode启用右键扩展",
+  "title": "VSCode启用右键扩展",
+  "description": "复制下面代码至文本文档中保存为*.reg，之后点击添加注册表",
+  "source": "@site/docs/环境配置/VSCode启用右键扩展.md",
+  "sourceDirName": "环境配置",
+  "slug": "/环境配置/VSCode启用右键扩展",
+  "permalink": "/docs/环境配置/VSCode启用右键扩展",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/环境配置/VSCode启用右键扩展.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "VIM使用技巧",
+    "permalink": "/docs/环境配置/VIM使用技巧"
+  },
+  "next": {
+    "title": "csh配置",
+    "permalink": "/docs/环境配置/csh配置"
+  }
+}

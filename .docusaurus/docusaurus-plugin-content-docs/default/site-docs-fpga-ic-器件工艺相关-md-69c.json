@@ -1,0 +1,24 @@
+{
+  "id": "FPGA-IC/器件工艺相关",
+  "title": "器件工艺相关",
+  "description": "Reference：",
+  "source": "@site/docs/FPGA-IC/器件工艺相关.md",
+  "sourceDirName": "FPGA-IC",
+  "slug": "/FPGA-IC/器件工艺相关",
+  "permalink": "/docs/FPGA-IC/器件工艺相关",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/FPGA-IC/器件工艺相关.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "后端",
+    "permalink": "/docs/FPGA-IC/后端"
+  },
+  "next": {
+    "title": "基础知识",
+    "permalink": "/docs/FPGA-IC/基础知识"
+  }
+}

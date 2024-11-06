@@ -1,0 +1,24 @@
+{
+  "id": "FPGA-IC/AXI4简记",
+  "title": "AXI4简记",
+  "description": "Reference",
+  "source": "@site/docs/FPGA-IC/AXI4简记.md",
+  "sourceDirName": "FPGA-IC",
+  "slug": "/FPGA-IC/AXI4简记",
+  "permalink": "/docs/FPGA-IC/AXI4简记",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/FPGA-IC/AXI4简记.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "APB",
+    "permalink": "/docs/FPGA-IC/APB"
+  },
+  "next": {
+    "title": "[CRC Generator](http://outputlogic.com/)",
+    "permalink": "/docs/FPGA-IC/CRC生成-LFSR电路"
+  }
+}

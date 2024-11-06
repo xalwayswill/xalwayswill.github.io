@@ -1,0 +1,24 @@
+{
+  "id": "随笔/img_transaction-sv",
+  "title": "img_transaction-sv",
+  "description": "",
+  "source": "@site/docs/随笔/img_transaction-sv.md",
+  "sourceDirName": "随笔",
+  "slug": "/随笔/img_transaction-sv",
+  "permalink": "/docs/随笔/img_transaction-sv",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/随笔/img_transaction-sv.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "img_sequencer-sv",
+    "permalink": "/docs/随笔/img_sequencer-sv"
+  },
+  "next": {
+    "title": "rand_case-sv",
+    "permalink": "/docs/随笔/rand_case-sv"
+  }
+}

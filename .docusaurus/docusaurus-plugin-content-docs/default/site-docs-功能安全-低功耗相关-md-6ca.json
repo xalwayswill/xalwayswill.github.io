@@ -1,0 +1,24 @@
+{
+  "id": "功能安全/低功耗相关",
+  "title": "减低功耗的优点",
+  "description": "1） 功耗过大会缩短使用时间，常用手机等电子设备的我们也知道，频繁充电会大大降低我们的用户体验。",
+  "source": "@site/docs/功能安全/低功耗相关.md",
+  "sourceDirName": "功能安全",
+  "slug": "/功能安全/低功耗相关",
+  "permalink": "/docs/功能安全/低功耗相关",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/功能安全/低功耗相关.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "设计问题",
+    "permalink": "/docs/work-log---g/设计问题"
+  },
+  "next": {
+    "title": "3DLUT",
+    "permalink": "/docs/图像处理/3DLUT"
+  }
+}

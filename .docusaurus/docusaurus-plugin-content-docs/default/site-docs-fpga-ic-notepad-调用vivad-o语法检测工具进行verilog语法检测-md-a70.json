@@ -1,0 +1,24 @@
+{
+  "id": "FPGA-IC/notepad++调用VIVADO语法检测工具进行verilog语法检测",
+  "title": "notepad++调用VIVADO语法检测工具进行verilog语法检测",
+  "description": "Notepad++安装NppExec插件",
+  "source": "@site/docs/FPGA-IC/notepad++调用VIVADO语法检测工具进行verilog语法检测.md",
+  "sourceDirName": "FPGA-IC",
+  "slug": "/FPGA-IC/notepad++调用VIVADO语法检测工具进行verilog语法检测",
+  "permalink": "/docs/FPGA-IC/notepad++调用VIVADO语法检测工具进行verilog语法检测",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/FPGA-IC/notepad++调用VIVADO语法检测工具进行verilog语法检测.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "memory-compiler",
+    "permalink": "/docs/FPGA-IC/memory-compiler"
+  },
+  "next": {
+    "title": "仲裁器-TODO：自己整理下",
+    "permalink": "/docs/FPGA-IC/仲裁器-TODO：自己整理下"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "环境配置/csh配置",
+  "title": "csh配置",
+  "description": "Reference:",
+  "source": "@site/docs/环境配置/csh配置.md",
+  "sourceDirName": "环境配置",
+  "slug": "/环境配置/csh配置",
+  "permalink": "/docs/环境配置/csh配置",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/环境配置/csh配置.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "VSCode启用右键扩展",
+    "permalink": "/docs/环境配置/VSCode启用右键扩展"
+  },
+  "next": {
+    "title": "git",
+    "permalink": "/docs/环境配置/git"
+  }
+}

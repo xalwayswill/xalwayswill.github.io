@@ -1,0 +1,24 @@
+{
+  "id": "System-Verilog/Randomization",
+  "title": "Randomization",
+  "description": "受限随机测试（constrained-random test， CRT）由两部分组成：产生输入到DUT的随机值的测试代码，以及一个伪随机数生成器（pseudo-random number generator，PRNG）的种子",
+  "source": "@site/docs/System-Verilog/Randomization.md",
+  "sourceDirName": "System-Verilog",
+  "slug": "/System-Verilog/Randomization",
+  "permalink": "/docs/System-Verilog/Randomization",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/System-Verilog/Randomization.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Program",
+    "permalink": "/docs/System-Verilog/Program"
+  },
+  "next": {
+    "title": "Systemverilog-运行时传递参数",
+    "permalink": "/docs/System-Verilog/Systemverilog-运行时传递参数"
+  }
+}

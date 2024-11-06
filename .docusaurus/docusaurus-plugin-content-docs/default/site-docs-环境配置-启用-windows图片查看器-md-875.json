@@ -1,0 +1,24 @@
+{
+  "id": "环境配置/启用Windows图片查看器",
+  "title": "启用Windows图片查看器",
+  "description": "[]进入注册表目录",
+  "source": "@site/docs/环境配置/启用Windows图片查看器.md",
+  "sourceDirName": "环境配置",
+  "slug": "/环境配置/启用Windows图片查看器",
+  "permalink": "/docs/环境配置/启用Windows图片查看器",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/环境配置/启用Windows图片查看器.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "zsh-tmux-vim",
+    "permalink": "/docs/环境配置/zsh-tmux-vim"
+  },
+  "next": {
+    "title": "（转载）CentOS查看程序、进程的依赖库的方法",
+    "permalink": "/docs/环境配置/（转载）CentOS查看程序、进程的依赖库的方法"
+  }
+}

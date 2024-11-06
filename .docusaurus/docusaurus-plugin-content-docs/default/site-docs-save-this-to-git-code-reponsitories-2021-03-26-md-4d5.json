@@ -1,0 +1,24 @@
+{
+  "id": "save this to git code reponsitories/2021-03-26",
+  "title": "2021-03-26",
+  "description": "",
+  "source": "@site/docs/save this to git code reponsitories/2021-03-26.md",
+  "sourceDirName": "save this to git code reponsitories",
+  "slug": "/save this to git code reponsitories/2021-03-26",
+  "permalink": "/docs/save this to git code reponsitories/2021-03-26",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/save this to git code reponsitories/2021-03-26.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "2021-03-26-2",
+    "permalink": "/docs/save this to git code reponsitories/2021-03-26-2"
+  },
+  "next": {
+    "title": "2021-07-21",
+    "permalink": "/docs/save this to git code reponsitories/2021-07-21"
+  }
+}

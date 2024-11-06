@@ -1,0 +1,24 @@
+{
+  "id": "script/verdi-license",
+  "title": "verdi-license",
+  "description": "",
+  "source": "@site/docs/script/verdi-license.md",
+  "sourceDirName": "script",
+  "slug": "/script/verdi-license",
+  "permalink": "/docs/script/verdi-license",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/script/verdi-license.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "sed-cat-awk-grep-wc-及应用",
+    "permalink": "/docs/script/sed-cat-awk-grep-wc-及应用"
+  },
+  "next": {
+    "title": "xrun",
+    "permalink": "/docs/script/xrun"
+  }
+}

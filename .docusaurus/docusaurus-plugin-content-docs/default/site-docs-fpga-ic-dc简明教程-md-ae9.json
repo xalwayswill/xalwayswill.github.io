@@ -1,0 +1,24 @@
+{
+  "id": "FPGA-IC/DC简明教程",
+  "title": "DC简明教程",
+  "description": "https://blog.eetop.cn/blog-861869-34250.html",
+  "source": "@site/docs/FPGA-IC/DC简明教程.md",
+  "sourceDirName": "FPGA-IC",
+  "slug": "/FPGA-IC/DC简明教程",
+  "permalink": "/docs/FPGA-IC/DC简明教程",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/FPGA-IC/DC简明教程.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Coding-style",
+    "permalink": "/docs/FPGA-IC/Coding-style"
+  },
+  "next": {
+    "title": "DDR3-简记",
+    "permalink": "/docs/FPGA-IC/DDR3-简记"
+  }
+}

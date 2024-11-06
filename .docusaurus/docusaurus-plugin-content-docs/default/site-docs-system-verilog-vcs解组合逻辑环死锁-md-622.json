@@ -1,0 +1,24 @@
+{
+  "id": "System-Verilog/VCS解组合逻辑环死锁",
+  "title": "VCS解组合逻辑环死锁",
+  "description": "在VCS编译阶段 增加 +vcs+loopreport+100000，就会在log中报出死循环的具体代码",
+  "source": "@site/docs/System-Verilog/VCS解组合逻辑环死锁.md",
+  "sourceDirName": "System-Verilog",
+  "slug": "/System-Verilog/VCS解组合逻辑环死锁",
+  "permalink": "/docs/System-Verilog/VCS解组合逻辑环死锁",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/System-Verilog/VCS解组合逻辑环死锁.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "UVM实战",
+    "permalink": "/docs/System-Verilog/UVM实战"
+  },
+  "next": {
+    "title": "任务、函数",
+    "permalink": "/docs/System-Verilog/任务、函数"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "System-Verilog/线程、进程及通信",
+  "title": "线程、进程及通信",
+  "description": "SV中使用fork...joinnone 和 fork ... joinany创建线程，一般不适用fork ...join因为需要内部所有语句执行完成才运行后面的语句",
+  "source": "@site/docs/System-Verilog/线程、进程及通信.md",
+  "sourceDirName": "System-Verilog",
+  "slug": "/System-Verilog/线程、进程及通信",
+  "permalink": "/docs/System-Verilog/线程、进程及通信",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/System-Verilog/线程、进程及通信.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "数据类型",
+    "permalink": "/docs/System-Verilog/数据类型"
+  },
+  "next": {
+    "title": "线程和通信",
+    "permalink": "/docs/System-Verilog/线程和通信"
+  }
+}

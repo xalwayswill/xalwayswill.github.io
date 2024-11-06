@@ -1,0 +1,24 @@
+{
+  "id": "FPGA-IC/APB",
+  "title": "APB",
+  "description": "APB协议是ARM公司中AMBA协议的一种。最早的APB协议现在叫做APB2，后来又有APB3和APB4。APB协议是向下兼容的，随着时间的推移，根据实际需求，APB3在APB2的基础上添加一些功能，APB4在APB3的基础上再添加了一些功能。后面我会先从最基本的APB2讲起，逐步到APB4。什么是APB协议？在APB3官方文档里有这么一句话：The APB is part of",
+  "source": "@site/docs/FPGA-IC/APB.md",
+  "sourceDirName": "FPGA-IC",
+  "slug": "/FPGA-IC/APB",
+  "permalink": "/docs/FPGA-IC/APB",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/FPGA-IC/APB.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "AHB",
+    "permalink": "/docs/FPGA-IC/AHB"
+  },
+  "next": {
+    "title": "AXI4简记",
+    "permalink": "/docs/FPGA-IC/AXI4简记"
+  }
+}

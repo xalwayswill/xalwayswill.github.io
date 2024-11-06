@@ -1,0 +1,958 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "path": "/docs",
+      "versions": [
+        {
+          "name": "current",
+          "label": "Next",
+          "isLast": true,
+          "path": "/docs",
+          "mainDocId": "intro",
+          "docs": [
+            {
+              "id": "FPGA-IC/8B10B编码",
+              "path": "/docs/FPGA-IC/8B10B编码",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "FPGA-IC/AHB",
+              "path": "/docs/FPGA-IC/AHB",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "FPGA-IC/APB",
+              "path": "/docs/FPGA-IC/APB",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "FPGA-IC/AXI4简记",
+              "path": "/docs/FPGA-IC/AXI4简记",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "FPGA-IC/Coding-style",
+              "path": "/docs/FPGA-IC/Coding-style",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "FPGA-IC/common-lib",
+              "path": "/docs/FPGA-IC/common-lib",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "FPGA-IC/CRC生成-LFSR电路",
+              "path": "/docs/FPGA-IC/CRC生成-LFSR电路",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "FPGA-IC/DC简明教程",
+              "path": "/docs/FPGA-IC/DC简明教程",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "FPGA-IC/DDR3-简记",
+              "path": "/docs/FPGA-IC/DDR3-简记",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "FPGA-IC/DesignWire",
+              "path": "/docs/FPGA-IC/DesignWire",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "FPGA-IC/ECC校验【转载】",
+              "path": "/docs/FPGA-IC/ECC校验【转载】",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "FPGA-IC/FIFO设计",
+              "path": "/docs/FPGA-IC/FIFO设计",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "FPGA-IC/FPGA内部结构",
+              "path": "/docs/FPGA-IC/FPGA内部结构",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "FPGA-IC/gotcha",
+              "path": "/docs/FPGA-IC/gotcha",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "FPGA-IC/High-Speed-Links-Circuits-and-Systems",
+              "path": "/docs/FPGA-IC/High-Speed-Links-Circuits-and-Systems",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "FPGA-IC/IC设计常用文件及格式介绍",
+              "path": "/docs/FPGA-IC/IC设计常用文件及格式介绍",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "FPGA-IC/LUT实现逻辑功能",
+              "path": "/docs/FPGA-IC/LUT实现逻辑功能",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "FPGA-IC/memory-compiler",
+              "path": "/docs/FPGA-IC/memory-compiler",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "FPGA-IC/notepad++调用VIVADO语法检测工具进行verilog语法检测",
+              "path": "/docs/FPGA-IC/notepad++调用VIVADO语法检测工具进行verilog语法检测",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "FPGA-IC/PTPX",
+              "path": "/docs/FPGA-IC/PTPX",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "FPGA-IC/QuestaSim-仿真VIVADO-IP",
+              "path": "/docs/FPGA-IC/QuestaSim-仿真VIVADO-IP",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "FPGA-IC/RAM-三种模式",
+              "path": "/docs/FPGA-IC/RAM-三种模式",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "FPGA-IC/Register",
+              "path": "/docs/FPGA-IC/Register",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "FPGA-IC/SPI四种工作模式",
+              "path": "/docs/FPGA-IC/SPI四种工作模式",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "FPGA-IC/STA",
+              "path": "/docs/FPGA-IC/STA",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "FPGA-IC/Systen-Cache",
+              "path": "/docs/FPGA-IC/Systen-Cache",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "FPGA-IC/VALID-READY-handshake",
+              "path": "/docs/FPGA-IC/VALID-READY-handshake",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "FPGA-IC/Valid-Ready打拍-TODO：自己整理下",
+              "path": "/docs/FPGA-IC/Valid-Ready打拍-TODO：自己整理下",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "FPGA-IC/VCS-仿真-VIVADO-IP",
+              "path": "/docs/FPGA-IC/VCS-仿真-VIVADO-IP",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "FPGA-IC/VCS+Verdi仿真环境的设置及Makefile文件编写",
+              "path": "/docs/FPGA-IC/VCS+Verdi仿真环境的设置及Makefile文件编写",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "FPGA-IC/仲裁器-TODO：自己整理下",
+              "path": "/docs/FPGA-IC/仲裁器-TODO：自己整理下",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "FPGA-IC/低功耗相关",
+              "path": "/docs/FPGA-IC/低功耗相关",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "FPGA-IC/原型验证(Prototyping)",
+              "path": "/docs/FPGA-IC/原型验证(Prototyping)",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "FPGA-IC/双调排序Bitonic-Sort",
+              "path": "/docs/FPGA-IC/双调排序Bitonic-Sort",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "FPGA-IC/后端",
+              "path": "/docs/FPGA-IC/后端",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "FPGA-IC/器件工艺相关",
+              "path": "/docs/FPGA-IC/器件工艺相关",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "FPGA-IC/基础知识",
+              "path": "/docs/FPGA-IC/基础知识",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "FPGA-IC/异步FIFO",
+              "path": "/docs/FPGA-IC/异步FIFO",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "FPGA-IC/总线跨4K处理",
+              "path": "/docs/FPGA-IC/总线跨4K处理",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "FPGA-IC/直方图统计",
+              "path": "/docs/FPGA-IC/直方图统计",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "FPGA-IC/跨时钟域(CDC)",
+              "path": "/docs/FPGA-IC/跨时钟域(CDC)",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "FPGA-IC/门控时钟",
+              "path": "/docs/FPGA-IC/门控时钟",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "FPGA-IC/除法运算",
+              "path": "/docs/FPGA-IC/除法运算",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "FPGA-IC/高级ASIC芯片综合",
+              "path": "/docs/FPGA-IC/高级ASIC芯片综合",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "intro",
+              "path": "/docs/intro",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "save this to git code reponsitories/2021-01-27",
+              "path": "/docs/save this to git code reponsitories/2021-01-27",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "save this to git code reponsitories/2021-03-26",
+              "path": "/docs/save this to git code reponsitories/2021-03-26",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "save this to git code reponsitories/2021-03-26-2",
+              "path": "/docs/save this to git code reponsitories/2021-03-26-2",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "save this to git code reponsitories/2021-07-21",
+              "path": "/docs/save this to git code reponsitories/2021-07-21",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "script/alias问题",
+              "path": "/docs/script/alias问题",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "script/CSH",
+              "path": "/docs/script/CSH",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "script/filelist",
+              "path": "/docs/script/filelist",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "script/makefile",
+              "path": "/docs/script/makefile",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "script/print_color",
+              "path": "/docs/script/print_color",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "script/python-argparse-----命令行选项、参数和子命令解析器",
+              "path": "/docs/script/python-argparse-----命令行选项、参数和子命令解析器",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "script/Python-参数解析模块-sys，getopt，argparse",
+              "path": "/docs/script/Python-参数解析模块-sys，getopt，argparse",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "script/Python-常用库记录",
+              "path": "/docs/script/Python-常用库记录",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "script/Python-错误打印",
+              "path": "/docs/script/Python-错误打印",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "script/python及SV读取bin文件",
+              "path": "/docs/script/python及SV读取bin文件",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "script/python处理二进制文件",
+              "path": "/docs/script/python处理二进制文件",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "script/Python常用函数",
+              "path": "/docs/script/Python常用函数",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "script/sed-cat-awk-grep-wc-及应用",
+              "path": "/docs/script/sed-cat-awk-grep-wc-及应用",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "script/TCL",
+              "path": "/docs/script/TCL",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "script/verdi-license",
+              "path": "/docs/script/verdi-license",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "script/Verilog_module_instance",
+              "path": "/docs/script/Verilog_module_instance",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "script/xrun",
+              "path": "/docs/script/xrun",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "script/定义解释器",
+              "path": "/docs/script/定义解释器",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "script/正则表达式",
+              "path": "/docs/script/正则表达式",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "script/简单仿真编译及verdi环境",
+              "path": "/docs/script/简单仿真编译及verdi环境",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "System-Verilog/Assertion",
+              "path": "/docs/System-Verilog/Assertion",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "System-Verilog/DPI",
+              "path": "/docs/System-Verilog/DPI",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "System-Verilog/Gotcha",
+              "path": "/docs/System-Verilog/Gotcha",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "System-Verilog/OOP相关",
+              "path": "/docs/System-Verilog/OOP相关",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "System-Verilog/Program",
+              "path": "/docs/System-Verilog/Program",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "System-Verilog/Randomization",
+              "path": "/docs/System-Verilog/Randomization",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "System-Verilog/Systemverilog-运行时传递参数",
+              "path": "/docs/System-Verilog/Systemverilog-运行时传递参数",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "System-Verilog/UVM实战",
+              "path": "/docs/System-Verilog/UVM实战",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "System-Verilog/VCS解组合逻辑环死锁",
+              "path": "/docs/System-Verilog/VCS解组合逻辑环死锁",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "System-Verilog/任务、函数",
+              "path": "/docs/System-Verilog/任务、函数",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "System-Verilog/接口",
+              "path": "/docs/System-Verilog/接口",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "System-Verilog/数据类型",
+              "path": "/docs/System-Verilog/数据类型",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "System-Verilog/线程、进程及通信",
+              "path": "/docs/System-Verilog/线程、进程及通信",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "System-Verilog/线程和通信",
+              "path": "/docs/System-Verilog/线程和通信",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "System-Verilog/虚函数",
+              "path": "/docs/System-Verilog/虚函数",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tutorial-basics/congratulations",
+              "path": "/docs/tutorial-basics/congratulations",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tutorial-basics/create-a-blog-post",
+              "path": "/docs/tutorial-basics/create-a-blog-post",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tutorial-basics/create-a-document",
+              "path": "/docs/tutorial-basics/create-a-document",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tutorial-basics/create-a-page",
+              "path": "/docs/tutorial-basics/create-a-page",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tutorial-basics/deploy-your-site",
+              "path": "/docs/tutorial-basics/deploy-your-site",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tutorial-basics/markdown-features",
+              "path": "/docs/tutorial-basics/markdown-features",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tutorial-extras/manage-docs-versions",
+              "path": "/docs/tutorial-extras/manage-docs-versions",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tutorial-extras/translate-your-site",
+              "path": "/docs/tutorial-extras/translate-your-site",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "work-log---arm-china/2023-08-15",
+              "path": "/docs/work-log---arm-china/2023-08-15",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "work-log---arm-china/Clock-gating-units-level",
+              "path": "/docs/work-log---arm-china/Clock-gating-units-level",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "work-log---arm-china/Exp-Golomb-指数哥伦布编码",
+              "path": "/docs/work-log---arm-china/Exp-Golomb-指数哥伦布编码",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "work-log---arm-china/IP-XACT",
+              "path": "/docs/work-log---arm-china/IP-XACT",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "work-log---arm-china/LSC",
+              "path": "/docs/work-log---arm-china/LSC",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "work-log---arm-china/PCE",
+              "path": "/docs/work-log---arm-china/PCE",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "work-log---arm-china/RNR-WAVELET中的优化",
+              "path": "/docs/work-log---arm-china/RNR-WAVELET中的优化",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "work-log---arm-china/SDE优化",
+              "path": "/docs/work-log---arm-china/SDE优化",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "work-log---arm-china/synthesis",
+              "path": "/docs/work-log---arm-china/synthesis",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "work-log---arm-china/YNR-优化",
+              "path": "/docs/work-log---arm-china/YNR-优化",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "work-log---arm-china/YUV2RGB",
+              "path": "/docs/work-log---arm-china/YUV2RGB",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "work-log---arm-china/为何当时demosaic对hblank有要求，不能实现0-hblank",
+              "path": "/docs/work-log---arm-china/为何当时demosaic对hblank有要求，不能实现0-hblank",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "work-log---arm-china/在5-5窗中搜索最大值和最小值",
+              "path": "/docs/work-log---arm-china/在5-5窗中搜索最大值和最小值",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "work-log---arm-china/面积记录",
+              "path": "/docs/work-log---arm-china/面积记录",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "work-log---g/2024-09-24",
+              "path": "/docs/work-log---g/2024-09-24",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "work-log---g/ptpx",
+              "path": "/docs/work-log---g/ptpx",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "work-log---g/SDC相关",
+              "path": "/docs/work-log---g/SDC相关",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "work-log---g/算法调试过程中的问题",
+              "path": "/docs/work-log---g/算法调试过程中的问题",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "work-log---g/综合Flow",
+              "path": "/docs/work-log---g/综合Flow",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "work-log---g/综合问题",
+              "path": "/docs/work-log---g/综合问题",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "work-log---g/设计问题",
+              "path": "/docs/work-log---g/设计问题",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "功能安全/低功耗相关",
+              "path": "/docs/功能安全/低功耗相关",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "图像处理/3DLUT",
+              "path": "/docs/图像处理/3DLUT",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "图像处理/5A",
+              "path": "/docs/图像处理/5A",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "图像处理/Architecture",
+              "path": "/docs/图像处理/Architecture",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "图像处理/bicubic",
+              "path": "/docs/图像处理/bicubic",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "图像处理/de-noise",
+              "path": "/docs/图像处理/de-noise",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "图像处理/demosaic",
+              "path": "/docs/图像处理/demosaic",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "图像处理/Dither",
+              "path": "/docs/图像处理/Dither",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "图像处理/DPF",
+              "path": "/docs/图像处理/DPF",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "图像处理/RGB2YUV-and-YUV2RGB",
+              "path": "/docs/图像处理/RGB2YUV-and-YUV2RGB",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "图像处理/RGBIR-sensor",
+              "path": "/docs/图像处理/RGBIR-sensor",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "图像处理/RNR",
+              "path": "/docs/图像处理/RNR",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "图像处理/sharpen",
+              "path": "/docs/图像处理/sharpen",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "图像处理/乱七八糟",
+              "path": "/docs/图像处理/乱七八糟",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "图像处理/去紫边",
+              "path": "/docs/图像处理/去紫边",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "图像处理/图像色域空间",
+              "path": "/docs/图像处理/图像色域空间",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "图像处理/图像预处理校正简介",
+              "path": "/docs/图像处理/图像预处理校正简介",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "图像处理/小波变换",
+              "path": "/docs/图像处理/小波变换",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "图像处理/常见分辨率",
+              "path": "/docs/图像处理/常见分辨率",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "开发工具/Graphviz---绘制图形网络",
+              "path": "/docs/开发工具/Graphviz---绘制图形网络",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "开发工具/office使用",
+              "path": "/docs/开发工具/office使用",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "接口协议/CameraLink",
+              "path": "/docs/接口协议/CameraLink",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "接口协议/SLVS-EC接口",
+              "path": "/docs/接口协议/SLVS-EC接口",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "接口协议/SPI",
+              "path": "/docs/接口协议/SPI",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "环境配置/（转载）CentOS查看程序、进程的依赖库的方法",
+              "path": "/docs/环境配置/（转载）CentOS查看程序、进程的依赖库的方法",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "环境配置/（转载）Linux动态链接库-so文件的创建与使用",
+              "path": "/docs/环境配置/（转载）Linux动态链接库-so文件的创建与使用",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "环境配置/Anaconda-配置多环境",
+              "path": "/docs/环境配置/Anaconda-配置多环境",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "环境配置/csh配置",
+              "path": "/docs/环境配置/csh配置",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "环境配置/C语言第三方库的使用",
+              "path": "/docs/环境配置/C语言第三方库的使用",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "环境配置/git",
+              "path": "/docs/环境配置/git",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "环境配置/Linux下工具license占用情况查询",
+              "path": "/docs/环境配置/Linux下工具license占用情况查询",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "环境配置/Linux下的环境变量",
+              "path": "/docs/环境配置/Linux下的环境变量",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "环境配置/Linux查看Redhat版本",
+              "path": "/docs/环境配置/Linux查看Redhat版本",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "环境配置/Linux设置环境变量",
+              "path": "/docs/环境配置/Linux设置环境变量",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "环境配置/Linux非root下安装tmux",
+              "path": "/docs/环境配置/Linux非root下安装tmux",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "环境配置/TMUX",
+              "path": "/docs/环境配置/TMUX",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "环境配置/vcs+verdi",
+              "path": "/docs/环境配置/vcs+verdi",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "环境配置/vimrc",
+              "path": "/docs/环境配置/vimrc",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "环境配置/VIM使用技巧",
+              "path": "/docs/环境配置/VIM使用技巧",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "环境配置/vim插件",
+              "path": "/docs/环境配置/vim插件",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "环境配置/VSCode启用右键扩展",
+              "path": "/docs/环境配置/VSCode启用右键扩展",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "环境配置/zsh-tmux-vim",
+              "path": "/docs/环境配置/zsh-tmux-vim",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "环境配置/启用Windows图片查看器",
+              "path": "/docs/环境配置/启用Windows图片查看器",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "移知网课程/AMBA-APB-AHB-AXI",
+              "path": "/docs/移知网课程/AMBA-APB-AHB-AXI",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "移知网课程/DDR",
+              "path": "/docs/移知网课程/DDR",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "移知网课程/MCU设计相关",
+              "path": "/docs/移知网课程/MCU设计相关",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "移知网课程/Memory系统",
+              "path": "/docs/移知网课程/Memory系统",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "移知网课程/NIC-400",
+              "path": "/docs/移知网课程/NIC-400",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "移知网课程/中断系统",
+              "path": "/docs/移知网课程/中断系统",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "移知网课程/基础知识",
+              "path": "/docs/移知网课程/基础知识",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "移知网课程/时钟树",
+              "path": "/docs/移知网课程/时钟树",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "随笔/base_test-sv",
+              "path": "/docs/随笔/base_test-sv",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "随笔/filelist-py",
+              "path": "/docs/随笔/filelist-py",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "随笔/image_display-py",
+              "path": "/docs/随笔/image_display-py",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "随笔/ImageData-sv",
+              "path": "/docs/随笔/ImageData-sv",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "随笔/img_agent-sv",
+              "path": "/docs/随笔/img_agent-sv",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "随笔/img_config-sv",
+              "path": "/docs/随笔/img_config-sv",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "随笔/img_driver-sv",
+              "path": "/docs/随笔/img_driver-sv",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "随笔/img_env-sv",
+              "path": "/docs/随笔/img_env-sv",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "随笔/img_if-sv",
+              "path": "/docs/随笔/img_if-sv",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "随笔/img_model-sv",
+              "path": "/docs/随笔/img_model-sv",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "随笔/img_monitor-sv",
+              "path": "/docs/随笔/img_monitor-sv",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "随笔/img_pkg-sv",
+              "path": "/docs/随笔/img_pkg-sv",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "随笔/img_scoreboard-sv",
+              "path": "/docs/随笔/img_scoreboard-sv",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "随笔/img_sequencer-sv",
+              "path": "/docs/随笔/img_sequencer-sv",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "随笔/img_transaction-sv",
+              "path": "/docs/随笔/img_transaction-sv",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "随笔/rand_case-sv",
+              "path": "/docs/随笔/rand_case-sv",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "随笔/tb-sv",
+              "path": "/docs/随笔/tb-sv",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "随笔/test_img_case-sv",
+              "path": "/docs/随笔/test_img_case-sv",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "随笔/void--",
+              "path": "/docs/随笔/void--",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "面试题目记录/为什么使用与非门而不是或非门进行逻辑面积评估？",
+              "path": "/docs/面试题目记录/为什么使用与非门而不是或非门进行逻辑面积评估？",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "/category/tutorial---basics",
+              "path": "/docs/category/tutorial---basics",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "/category/tutorial---extras",
+              "path": "/docs/category/tutorial---extras",
+              "sidebar": "tutorialSidebar"
+            }
+          ],
+          "draftIds": [],
+          "sidebars": {
+            "tutorialSidebar": {
+              "link": {
+                "path": "/docs/intro",
+                "label": "intro"
+              }
+            }
+          }
+        }
+      ],
+      "breadcrumbs": true
+    }
+  }
+}

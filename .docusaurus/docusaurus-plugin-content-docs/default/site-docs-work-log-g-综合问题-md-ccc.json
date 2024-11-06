@@ -1,0 +1,24 @@
+{
+  "id": "work-log---g/综合问题",
+  "title": "综合问题",
+  "description": "1. 在DC flow下，发现综合出来的 clock_network功耗特别大，高达300mW，功耗占比98%，综合会报TIM-134 Warning",
+  "source": "@site/docs/work-log---g/综合问题.md",
+  "sourceDirName": "work-log---g",
+  "slug": "/work-log---g/综合问题",
+  "permalink": "/docs/work-log---g/综合问题",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/work-log---g/综合问题.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "综合Flow",
+    "permalink": "/docs/work-log---g/综合Flow"
+  },
+  "next": {
+    "title": "设计问题",
+    "permalink": "/docs/work-log---g/设计问题"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "FPGA-IC/直方图统计",
+  "title": "直方图统计",
+  "description": "转载https://zhuanlan.zhihu.com/p/62844487",
+  "source": "@site/docs/FPGA-IC/直方图统计.md",
+  "sourceDirName": "FPGA-IC",
+  "slug": "/FPGA-IC/直方图统计",
+  "permalink": "/docs/FPGA-IC/直方图统计",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/FPGA-IC/直方图统计.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "总线跨4K处理",
+    "permalink": "/docs/FPGA-IC/总线跨4K处理"
+  },
+  "next": {
+    "title": "跨时钟域(CDC)",
+    "permalink": "/docs/FPGA-IC/跨时钟域(CDC)"
+  }
+}

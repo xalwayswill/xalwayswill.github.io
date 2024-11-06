@@ -1,0 +1,24 @@
+{
+  "id": "script/python及SV读取bin文件",
+  "title": "python及SV读取bin文件",
+  "description": "",
+  "source": "@site/docs/script/python及SV读取bin文件.md",
+  "sourceDirName": "script",
+  "slug": "/script/python及SV读取bin文件",
+  "permalink": "/docs/script/python及SV读取bin文件",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/script/python及SV读取bin文件.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "python-argparse-----命令行选项、参数和子命令解析器",
+    "permalink": "/docs/script/python-argparse-----命令行选项、参数和子命令解析器"
+  },
+  "next": {
+    "title": "python处理二进制文件",
+    "permalink": "/docs/script/python处理二进制文件"
+  }
+}

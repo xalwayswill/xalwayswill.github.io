@@ -1,0 +1,24 @@
+{
+  "id": "环境配置/vcs+verdi",
+  "title": "vcs+verdi",
+  "description": "安装版本要选对",
+  "source": "@site/docs/环境配置/vcs+verdi.md",
+  "sourceDirName": "环境配置",
+  "slug": "/环境配置/vcs+verdi",
+  "permalink": "/docs/环境配置/vcs+verdi",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/环境配置/vcs+verdi.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "git",
+    "permalink": "/docs/环境配置/git"
+  },
+  "next": {
+    "title": "vimrc",
+    "permalink": "/docs/环境配置/vimrc"
+  }
+}

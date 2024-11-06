@@ -1,0 +1,24 @@
+{
+  "id": "FPGA-IC/门控时钟",
+  "title": "门控时钟",
+  "description": "Reference",
+  "source": "@site/docs/FPGA-IC/门控时钟.md",
+  "sourceDirName": "FPGA-IC",
+  "slug": "/FPGA-IC/门控时钟",
+  "permalink": "/docs/FPGA-IC/门控时钟",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/FPGA-IC/门控时钟.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "跨时钟域(CDC)",
+    "permalink": "/docs/FPGA-IC/跨时钟域(CDC)"
+  },
+  "next": {
+    "title": "除法运算",
+    "permalink": "/docs/FPGA-IC/除法运算"
+  }
+}

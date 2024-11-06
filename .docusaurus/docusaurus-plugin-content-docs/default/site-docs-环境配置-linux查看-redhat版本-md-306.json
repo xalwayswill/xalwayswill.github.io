@@ -1,0 +1,24 @@
+{
+  "id": "环境配置/Linux查看Redhat版本",
+  "title": "Linux查看Redhat版本",
+  "description": "/proc文件系统下的多种文件提供的系统信息不是针对某个特定进程的，而是能够在整个系统范围的上下文中使用。可以使用的文件随系统配置的变化而变化。命令procinfo能够显示基于其中某些文件的多种系统信息。以下详细描述/proc下的文件。",
+  "source": "@site/docs/环境配置/Linux查看Redhat版本.md",
+  "sourceDirName": "环境配置",
+  "slug": "/环境配置/Linux查看Redhat版本",
+  "permalink": "/docs/环境配置/Linux查看Redhat版本",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/环境配置/Linux查看Redhat版本.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Linux下的环境变量",
+    "permalink": "/docs/环境配置/Linux下的环境变量"
+  },
+  "next": {
+    "title": "Linux设置环境变量",
+    "permalink": "/docs/环境配置/Linux设置环境变量"
+  }
+}

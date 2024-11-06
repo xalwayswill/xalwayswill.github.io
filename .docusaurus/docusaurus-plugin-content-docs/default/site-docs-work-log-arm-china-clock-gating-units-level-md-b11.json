@@ -1,0 +1,24 @@
+{
+  "id": "work-log---arm-china/Clock-gating-units-level",
+  "title": "Clock-gating-units-level",
+  "description": "在vsync的下降沿去采样module_en",
+  "source": "@site/docs/work-log---arm-china/Clock-gating-units-level.md",
+  "sourceDirName": "work-log---arm-china",
+  "slug": "/work-log---arm-china/Clock-gating-units-level",
+  "permalink": "/docs/work-log---arm-china/Clock-gating-units-level",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/work-log---arm-china/Clock-gating-units-level.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "2023-08-15",
+    "permalink": "/docs/work-log---arm-china/2023-08-15"
+  },
+  "next": {
+    "title": "Exp-Golomb-指数哥伦布编码",
+    "permalink": "/docs/work-log---arm-china/Exp-Golomb-指数哥伦布编码"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "work-log---arm-china/YNR-优化",
+  "title": "YNR-优化",
+  "description": "算法简介：YNR的窗口大小为13x13，先从内部5x5的窗口通过MeanFilter计算lum，也就是均值滤波去估计噪声，并且将mv信息带入，如果运动则noise\\*nlmmotionr，之后再在5x5的窗内寻找最大值和最小值，通过max-min得到contrast，然后通过曲线拟合，估计Freq。",
+  "source": "@site/docs/work-log---arm-china/YNR-优化.md",
+  "sourceDirName": "work-log---arm-china",
+  "slug": "/work-log---arm-china/YNR-优化",
+  "permalink": "/docs/work-log---arm-china/YNR-优化",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/work-log---arm-china/YNR-优化.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "SDE优化",
+    "permalink": "/docs/work-log---arm-china/SDE优化"
+  },
+  "next": {
+    "title": "YUV2RGB",
+    "permalink": "/docs/work-log---arm-china/YUV2RGB"
+  }
+}

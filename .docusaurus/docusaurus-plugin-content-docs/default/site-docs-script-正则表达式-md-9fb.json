@@ -1,0 +1,24 @@
+{
+  "id": "script/正则表达式",
+  "title": "正则表达式",
+  "description": "不同语言的正则表达式语法是有差异的，有的使用()标记子表达式需要转义，有的不需要，grep和vim中的特殊符号一般直接使用即可匹配，作为特殊功能字符时需要加\\转义才能发挥功能。而语言中的正则表达式不需要，应该和下述规则相同。",
+  "source": "@site/docs/script/正则表达式.md",
+  "sourceDirName": "script",
+  "slug": "/script/正则表达式",
+  "permalink": "/docs/script/正则表达式",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/script/正则表达式.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "定义解释器",
+    "permalink": "/docs/script/定义解释器"
+  },
+  "next": {
+    "title": "简单仿真编译及verdi环境",
+    "permalink": "/docs/script/简单仿真编译及verdi环境"
+  }
+}

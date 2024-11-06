@@ -1,0 +1,24 @@
+{
+  "id": "FPGA-IC/VALID-READY-handshake",
+  "title": "VALID-READY-handshake",
+  "description": "参考AXI协议规定",
+  "source": "@site/docs/FPGA-IC/VALID-READY-handshake.md",
+  "sourceDirName": "FPGA-IC",
+  "slug": "/FPGA-IC/VALID-READY-handshake",
+  "permalink": "/docs/FPGA-IC/VALID-READY-handshake",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/FPGA-IC/VALID-READY-handshake.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "关于CPU Cache<sup>[1](https://blog.csdn.net/zhangj95/article/details/81199272#fn1)</sup>",
+    "permalink": "/docs/FPGA-IC/Systen-Cache"
+  },
+  "next": {
+    "title": "简介",
+    "permalink": "/docs/FPGA-IC/VCS+Verdi仿真环境的设置及Makefile文件编写"
+  }
+}

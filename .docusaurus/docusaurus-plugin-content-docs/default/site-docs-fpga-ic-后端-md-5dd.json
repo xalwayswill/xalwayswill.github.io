@@ -1,0 +1,24 @@
+{
+  "id": "FPGA-IC/后端",
+  "title": "后端",
+  "description": "* 一些缩写",
+  "source": "@site/docs/FPGA-IC/后端.md",
+  "sourceDirName": "FPGA-IC",
+  "slug": "/FPGA-IC/后端",
+  "permalink": "/docs/FPGA-IC/后端",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/FPGA-IC/后端.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "双调排序Bitonic-Sort",
+    "permalink": "/docs/FPGA-IC/双调排序Bitonic-Sort"
+  },
+  "next": {
+    "title": "器件工艺相关",
+    "permalink": "/docs/FPGA-IC/器件工艺相关"
+  }
+}

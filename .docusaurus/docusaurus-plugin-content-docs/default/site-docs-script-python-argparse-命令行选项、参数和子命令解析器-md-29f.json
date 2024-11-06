@@ -1,0 +1,24 @@
+{
+  "id": "script/python-argparse-----命令行选项、参数和子命令解析器",
+  "title": "python-argparse-----命令行选项、参数和子命令解析器",
+  "description": "https://docs.python.org/zh-cn/3/library/argparse.html#module-argparse",
+  "source": "@site/docs/script/python-argparse-----命令行选项、参数和子命令解析器.md",
+  "sourceDirName": "script",
+  "slug": "/script/python-argparse-----命令行选项、参数和子命令解析器",
+  "permalink": "/docs/script/python-argparse-----命令行选项、参数和子命令解析器",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/script/python-argparse-----命令行选项、参数和子命令解析器.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "print_color",
+    "permalink": "/docs/script/print_color"
+  },
+  "next": {
+    "title": "python及SV读取bin文件",
+    "permalink": "/docs/script/python及SV读取bin文件"
+  }
+}
