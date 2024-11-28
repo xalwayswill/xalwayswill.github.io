@@ -52,6 +52,7 @@ M(x)×2^32/G(x)=Qm(x)×2^m+Q_(m-1)(x)×2^(m-1)+Q_(m-2)(x)×2^(m-2)+…+Q1(x)×2^
 ![](CRC生成-LFSR电路.assets\23495115-d32258b8b7a1f46e.png)
 
 # C语言实现
+版本一：CRC16，输入数据流为8bit
 ```
 #include <stdio.h>
 #include <string.h>
@@ -67,16 +68,39 @@ ushort CalcCRC16 (unsigned char *data)
     ushort crc;
     while(len--)
     {
-        crc = crc_init ^ ((ushort)(*(data++))) << 8;  // 源数据流先补8个0，再模2加初值后进行模2除
+        crc = crc_init ^ ((ushort)(*(data++))) << 8;  // 源数据流先补8个0（因为CRC多项式为16bit），再模2加初值后进行模2除
         for(i = 0; i < 8; i++)
         {
             if(crc & 0x8000)  // 若输入bit为1，则进行模2除取余数（模2减生成多项式即为余数）
-                crc = (crc << 1) ^ 0x8005;  // 1000000000000101B，即CRC生成多项式系数的简式
+                crc = (crc << 1) ^ 0x8005;  // 1000000000000101B，即CRC生成多项式系数的简式，因为已经判断过最高bit为1，左移后做模2减肯定会消掉最高bit
             else  // 若输入bit为0，则直接就为余数
                 crc <<= 1;
         }
     }
     return crc;  // CRC终值
+}
+```
+版本二：CRC8，输入数据流为8bit
+```
+#define CRC_POLYNOMIAL_8    0x0C
+uint8 crc_8(uint8 crc, uint8* pdata, uint32 len)
+{
+    for (uint32 i = 0; i < len; i++)
+    {
+        crc ^= pdata[i]; // crc为这次计算的初始值，或者为上一次计算的结果，及这次计算的值模2加上初始值
+        for (uint8 j = 0; j < 8; j++)
+        {
+            if ((crc & 0x80u) > 0)
+            {
+                crc = ( (uint8)(crc << 1u) ) ^ CRC_POLYNOMIAL_8;
+            }
+            else
+            {
+                crc <<= 1u;
+            }
+        }
+    }
+    return crc;
 }
 ```
 当输入数据过长时，采用直接计算的方法会消耗大量的时间，因此一般采用查表的方式，先生成CRC校验表，然后通过查表获得。
