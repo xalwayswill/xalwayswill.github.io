@@ -41,7 +41,7 @@ SRAM内部划分为多个bank，一个bank对应一行或多行存储阵列，�
 ![](memory-compiler.assets\23495115-72c0a5cfb546cd7a.png)
 ![](memory-compiler.assets\23495115-ff2e49a66ac4f1eb.png)
 * Bank对于SRAM性能的影响
-可以看到，bank数越少I/O及相应的驱动和控制单元越少，对应的SRAM面积也就越小，但由于众多Bit cells共用驱动和控制逻辑，SRAM的性能也会相对降低。相应的增大bank数能够有效的提升SRAM性能，但同时也会带来面积的增加。因此，可通过bank数目的设置来实现性能和面积之间的平衡。
+可以看到，bank数越少，I/O及相应的驱动和控制单元越少，对应的SRAM面积也就越小，但由于众多Bit cells共用驱动和控制逻辑，SRAM的性能也会相对降低。相应的增大bank数能够有效的提升SRAM性能，但同时也会带来面积和功耗的增加（**这个也只是经验**，对于words特别大的情况还是切bank多点好，甚至面积功耗都能有收益）。因此，可通过bank数目的设置来实现性能和面积之间的平衡。
 
 
 #### multiplexer：
@@ -60,7 +60,7 @@ Columns in memory matrix: Total = word width * multiplexer
 `D<0>`代表输出数据的bit0，各个bit分开存放，每个bit由m列的存储单元进行存储，所以总的列数为 word_width*Multiplexer（不包含column redundancy），分bank是为了分开供电驱动，提高性能，但是会增大面积，地址每两行切换一次bank
 
 * Multiplexer 对SRAM面积和性能的影响：
-Multiplexer越大，memory的读写速度就越高，因为row address位宽越小，译码越快
+Multiplexer越大，memory的读写速度就越高（**不绝对，sram尺寸比较正常的情况下**），因为row address位宽越小，译码越快
 Multiplexer越大，memory的面积就越大（cell和cell的横向距离远大于纵向距离，multiplexer增大会增加每条wordline的bit数，减少纵向的wordline数，但横向尺寸的增大大于纵向）
 Multiplexer越大，每次row地址选择的cell就越多，功耗也会随之增加
 
@@ -71,6 +71,7 @@ Multiplexer越大，每次row地址选择的cell就越多，功耗也会随之�
 由于bank及multiplexer对SRAM结构的影响，SRAM的深度和位宽的配置也存在一定的约束条件，以Single-port的SRAM为例，下表描述了不同bank及multiplexer下可配置的depth和width，这也就是某些深度和位宽所对应的SRAM无法生成的原因，一般是通过增加额外的depth来满足生成限制。
 例如下面为某SRAM compiler的生成约束
 ![](memory-compiler.assets\23495115-9c3adf947bf8f3c0.png)
+**SRAM的选型需要将Bank和Mux综合考虑，先生成DataSheet进行选型，并没有绝对Bank/Mux更大或者更小最好，要考虑sram的形状，面积功耗等分析**
 
 
 #### Coulum redundancy是为了避免在流片制造过程中出现列损坏，通过用redundancy的列对坏列进行替换。
@@ -80,7 +81,7 @@ Multiplexer越大，每次row地址选择的cell就越多，功耗也会随之�
 ·memory compiler的选择
 对于一个memory size大小确定的memory block，Column Mux越大，Row address位宽越小：
 
-*   memory读写的访问速度就高 （row译码选择快）
+*   memory读写的访问速度就高 （row译码选择快，但是column译码比较慢，还是需要balance）
 *   memory的面积大（cell和cell的横向距离大于纵向距离，column mux增加很增加bits per wordline--横向，减少wordline数--纵向，横向尺寸增加远大于纵向）
 *   因为一次选择的row地址对应的cell多，功耗也会增加
 
