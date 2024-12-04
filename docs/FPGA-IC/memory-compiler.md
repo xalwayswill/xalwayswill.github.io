@@ -115,3 +115,8 @@ SRAM的结构
 
 ![](memory-compiler.assets\23495115-814003cc7d83bd80.png)
 ![](memory-compiler.assets\23495115-b32d7c3d2f83d0c7.png)
+
+### SRAM的选型
+1. 在进行memory选型的时候，如果memory尺寸不合适会导致可选的mux和bank组合很少，一般情况下，相同size的memory，sp相比于2p面积会有优势（优势不大），但是sp会导致bits变大，导致最终生成的memory的面积反而更大，所以不能盲目选择sp类型的memory
+2. 如果通过compiler的mux无法很好的调节memory的尺寸，也可以考虑自己在memory外围进行位宽的拼接拆分等，可能会带来memory面积的收益，但是外围电路增加的代价也需要考虑进去
+3. 通过一个小的双口memory加一个大的单口memory去替换大的双口memory的做法不一定可取，因为如果是写快读慢的话，需要的buffer深度就很大，需要将单口的memory放在快时钟域，双口放在后面；如果是写慢读快的话，本来需要的缓存深度也不大，大概率不需要额外处理。
