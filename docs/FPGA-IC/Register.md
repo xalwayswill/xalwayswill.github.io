@@ -1,12 +1,7 @@
 ### Reference
 [设计里如何实现UVM寄存器模型](https://aijishu.com/a/1060000000328459)
 
-RO：Read Only
-RW：Read Write
-WC：写1复位整个寄存器，W1C写1只清空当前filed
-W1C: Write 1 to Clear itself and the value 1 will not be written to the field actually, read this field always as 0
-W1T: Write 1 to Toggle; If the bit in the written value is a 1, the corresponding bit in the field is inverted. Otherwise, the field is not affected.
-W1CA: Write 1 to clear all fields except reserved; If this bit is written as “1”, the all field except reserved will be set to its reset value. Besides, read this field always as 0.
+### 寄存器类型
 ![](Register.assets\23495115-5c2404a2eec9454d.png)
 
 | Type | Description |
@@ -37,3 +32,7 @@ W1CA: Write 1 to clear all fields except reserved; If this bit is written as “
 |”W1”|	W: first one after HARD reset is as-is, other W have no effects, R: no effect|
 |”WO1”|	W: first one after HARD reset is as-is, other W have no effects, R: error|
 |”NOACCESS”|	W: no effect, R: no effect|
+### 实现
+* W1C:
+`d = (wr_en ? (q & ~wdata) : q) | hw_set` where hw_set has priority
+`d = wr_en ? ((q | hw_set) & ~wdata) : (q | hw_set)` where wdata has priority
