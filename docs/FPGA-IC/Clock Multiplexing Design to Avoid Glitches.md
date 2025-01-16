@@ -72,3 +72,6 @@ module clock_mux (clk,clk_select,clk_out);
 
 endmodule
 ```
+
+## 案例分析
+hfrc和mipi byte clock切换时候，因为mipi byte clock不是continues，导致切换会失败，还做了个time_out极致，例如如果clk0->clk1因为clk0没有时钟导致切换失败的话，经过timeout时间，强制切换到clk1
