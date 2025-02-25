@@ -1,9 +1,7 @@
 # MIPI
 ## Reference
-[1] MIPI D-PHY Specification
-
-[2] MIPI C-PHY Specification
-
+[1] MIPI D-PHY Specification  
+[2] MIPI C-PHY Specification  
 [3] MIPI DSI-2 Specification
 
 ## D-PHY
