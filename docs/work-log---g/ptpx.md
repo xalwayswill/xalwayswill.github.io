@@ -1,6 +1,6 @@
 [功耗分析](https://www.cnblogs.com/IClearner/p/6898463.html)
-[功耗分析](https://www.cnblogs.com/IClearner/p/6893645.html)
 [PTPX UG](https://picture.iczhiku.com/resource/eetop/sYkefefZjIyJFmbB.pdf)
+[PrimeTime Suite Variables and Attributes](https://iccircle.com/static/upload/img20240828114128.pdf)
 * namemap文件，主要是rtl到综合后netlist的门级name映射
 set_rtl_to_gate_name
 * netlist.v 综合后的网表 verilog文件，理论上如果使用综合后的网表进行功耗分析，波形文件也应该使用网表文件产生波形，保证波形能够正确反标回去，不然annotated nets/cells 的比例会很低
