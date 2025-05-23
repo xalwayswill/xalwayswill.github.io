@@ -1,3 +1,7 @@
+# Timing Constrain and Optimization
+### Reference
+\[1\] [Synopsys® Timing Constraints and Optimization User Guide](https://iccircle.com/static/upload/img20240131000241.pdf)
+
 ### How to perform timing check between asynchronous clock domains
 If two clock domains are asynchronous and you have applied set_false_path between these two clocks, no timing checks can be performed. Also, if you have defined a clock group with asynchronous clocks using the set_clock_groups command with the -asynchronous option, by default the tool cannot perform a timing check. But if you use the -allow_paths option with the set_clock_groups command, timing check can be performed.
 To control the data path delay between the registers from asynchronous clock domains:
