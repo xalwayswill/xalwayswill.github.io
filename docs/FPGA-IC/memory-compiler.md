@@ -120,3 +120,21 @@ SRAM的结构
 1. 在进行memory选型的时候，如果memory尺寸不合适会导致可选的mux和bank组合很少，一般情况下，相同size的memory，sp相比于2p面积会有优势（优势不大），但是sp会导致bits变大，导致最终生成的memory的面积反而更大，所以不能盲目选择sp类型的memory
 2. 如果通过compiler的mux无法很好的调节memory的尺寸，也可以考虑自己在memory外围进行位宽的拼接拆分等，可能会带来memory面积的收益，但是外围电路增加的代价也需要考虑进去
 3. 通过一个小的双口memory加一个大的单口memory去替换大的双口memory的做法不一定可取，因为如果是写快读慢的话，需要的buffer深度就很大，需要将单口的memory放在快时钟域，双口放在后面；如果是写慢读快的话，本来需要的缓存深度也不大，大概率不需要额外处理。
+
+### Register Files (RFs) 和 SRAM 类型memory的区别
+一个回答：
+"There is no difference in the basic architecture, but the Register File is optimized for better performance with smaller instance sizes. "
+Usually registered file should be operated as fast as possible with acess time within 1 CLK cycle like the CPU core speed. So it can be implemented as either SRAM architecture or array of DFF architecture. The decidion factor is access time.
+另一个回答：
+If SRAM architecture is used to implement register file. To enhance the speed, the SRAM cells per column must be minimized to reduce the bit-line cap per column, so the area efficiency is sacrified to gain speed. That's the reason why register file is usually smaller.
+But for current advance technology like 0.18um, 200~400MHz SRAM speed is easy to achieve. So SRAM-type registered file is good enough. But for 1GHz or higher speed registered file, SRAM-type architecture can't achieve this speed. Usually fully-customed registered file is used.
+a. Bit Cell Wise difference:
+RF Bitcell: 8 transistors. it is 1R1W cell（这是s2p类型，sp类型可能不需要8个门）. here read and write ports are different, so no read wright conflict. Compare to SRAM bit-cell it's area is more.
+SRAM bit-cell: 6 transistors. it is 1RW cell. here same word line and bit-lines are used for both read and write operation.
+b. Architecture wise difference:
+RF Architecture: as read and write ports are different, so separate decoder logic is required for read and write operation. That means decoder area will be twice comapare to SRAM decoder. Other thn that architecture, and floor plan wise lot of differences are there.
+SRAM Architecture: we can do either read or write at a time, so same decoder logic is used for both read and write operation. other than that sense amplifier is required.
+c. Area Analysis:
+compare to RF, SRAM area will be smaller because of above two major reason, for a same size memory.
+d. performance:
+compare to SRAM, RFs performance will be better, because read and write ports are separated.
