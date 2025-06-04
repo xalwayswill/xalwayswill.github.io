@@ -127,9 +127,8 @@ SRAM的结构
 Usually registered file should be operated as fast as possible with acess time within 1 CLK cycle like the CPU core speed. So it can be implemented as either SRAM architecture or array of DFF architecture. The decidion factor is access time.
 
 另一个回答：
-If SRAM architecture is used to implement register file. To enhance the speed, the SRAM cells per column must be minimized to reduce the bit-line cap per column, so the area efficiency is sacrified to gain speed. That's the reason why register file is usually smaller.
+If SRAM architecture is used to implement register file. To enhance the speed, the SRAM cells per column must be minimized to reduce the bit-line cap per column, so the area efficiency is sacrified to gain speed（但是好像rf_sp相比于sram_sp面积反而更小？？）. That's the reason why register file is usually smaller.
 But for current advance technology like 0.18um, 200~400MHz SRAM speed is easy to achieve. So SRAM-type registered file is good enough. But for 1GHz or higher speed registered file, SRAM-type architecture can't achieve this speed. Usually fully-customed registered file is used.
-
 1. Bit Cell Wise difference:
 RF Bitcell: 8 transistors. it is 1R1W cell（这是s2p类型，sp类型可能不需要8个门）. here read and write ports are different, so no read wright conflict. Compare to SRAM bit-cell it's area is more.
 SRAM bit-cell: 6 transistors. it is 1RW cell. here same word line and bit-lines are used for both read and write operation.
