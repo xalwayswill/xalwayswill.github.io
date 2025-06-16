@@ -1,7 +1,10 @@
 # 综合Flow
 ## Reference
 [1] [Design Compiler Optimization Reference Manual](https://picture.iczhiku.com/resource/eetop/SHidRGQWtQruovNN.pdf)
+
 [2] [Design Compiler Register Retiming Reference Manual]
+
+[3] [综合与Design Conpiler](https://leiblog.wang/static/FPGA/books/%E7%BB%BC%E5%90%88%E4%B8%8EDesignCompiler.pdf)
 
 ```
 ## Elaborate:
