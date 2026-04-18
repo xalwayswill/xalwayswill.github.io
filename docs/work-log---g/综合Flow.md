@@ -4,9 +4,9 @@
 
 [2] [Design Compiler Register Retiming Reference Manual]
 
-[3] [综合与Design Conpiler](https://leiblog.wang/static/FPGA/books/%E7%BB%BC%E5%90%88%E4%B8%8EDesignCompiler.pdf)
+[3] [综合与Design Compiler](https://leiblog.wang/static/FPGA/books/%E7%BB%BC%E5%90%88%E4%B8%8EDesignCompiler.pdf)
 
-```
+```m
 ## Elaborate:
 ### Read design and lib or ddc
 analyze -format sverilog -work WORK -vcs "-f xxx.f"
