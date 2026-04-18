@@ -6,6 +6,7 @@
 
 [3] [综合与Design Compiler](https://leiblog.wang/static/FPGA/books/%E7%BB%BC%E5%90%88%E4%B8%8EDesignCompiler.pdf)
 
+[4] [综合与Design Compiler](https://www.cnblogs.com/sasasatori/p/18459574)
 ```m
 ## Elaborate:
 ### Read design and lib or ddc
