@@ -1,11 +1,11 @@
 
 ### Reference
-
+```
 [基于三维查找表插值算法的显示器色彩空间转换模型的研究](http://www.designartj.com/ch/reader/download_pdf_file.aspx?journal_id=bzgcgk&file_name=3618E016C89268EC5BE49414EEAFA92CB53D69655D08E5174753FBA88B67B54B3F8D784C32E993DF87584989526651CE596418DBB66B75AB5039015AA6EB0622&open_type=self&file_no=201105021)
 [How to create a color gamut](https://zhuanlan.zhihu.com/p/304729311)
 [Applications of Tetrahedral Interpolation in Color Conversion Model](https://ieeexplore.ieee.org/document/4722591)
 [3D LUT interpolation](https://community.acescentral.com/uploads/default/original/2X/5/518c5ede1ca11c4a7e13f9c7350e2228bb8762c7.pdf)
-
+```
 **使用的是四面体插值，而非三线性插值，计算量小，效果精度更高，论文中的方法使用的是判断当前点在哪个四面体内部，然后当前点与另外四个顶点组成四个四面体，四个四面体面积之和等于大的四面体的面积，根据面积占比去划分各部分的权重**
 本文都假定顶点排序按照01234567（从下到上，顺时针旋转）
 将大的立方体拆分成小的立方体，每个立方体总共八个顶点，分别存在8个sram中，然后根据像素位置来取顶点值进行计算，**LUT表是11bit，有符号数**
