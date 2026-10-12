@@ -30,3 +30,4 @@ PCIe 采用基于数据包完成两个组件之间的数据传输，PCIe是异�
 * 不加扰直接8b10b，固定的码型数据会造成大的EMI噪声
 * Elastic Buffer来同步恢复时钟和本地时钟造成的数据速率差异，通过插入或者删除SKIP序列
 * 接收端的数据链路层并不需要管理FC buffer，因为FC buffer 是区分P/NP/CPL的，这些需要事务层去解析，发送端数据链路层只需要维护我还能发送多少TLP，接收端数据链路层维护我已经释放了多少Credit，发送端事务层只需要告诉数据链路层有一个TLP要发，接收端事务层只需要告诉数据链路层有一个buffer空间释放了，其余的credit计数维护都在数据链路层维护，而实际的FC buffer则是在传输层
+* Replay Buffer（ACK/NAK）属于数据链路层，Flow Control（FC buffer）属于事务层，updateFC在数据链路层，ACK/NAK的发送也不参考Credit的容量
