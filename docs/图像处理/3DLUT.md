@@ -1,11 +1,9 @@
 
 ### Reference
-```
 [基于三维查找表插值算法的显示器色彩空间转换模型的研究](http://www.designartj.com/ch/reader/download_pdf_file.aspx?journal_id=bzgcgk&file_name=3618E016C89268EC5BE49414EEAFA92CB53D69655D08E5174753FBA88B67B54B3F8D784C32E993DF87584989526651CE596418DBB66B75AB5039015AA6EB0622&open_type=self&file_no=201105021)
 [How to create a color gamut](https://zhuanlan.zhihu.com/p/304729311)
 [Applications of Tetrahedral Interpolation in Color Conversion Model](https://ieeexplore.ieee.org/document/4722591)
 [3D LUT interpolation](https://community.acescentral.com/uploads/default/original/2X/5/518c5ede1ca11c4a7e13f9c7350e2228bb8762c7.pdf)
-```
 **使用的是四面体插值，而非三线性插值，计算量小，效果精度更高，论文中的方法使用的是判断当前点在哪个四面体内部，然后当前点与另外四个顶点组成四个四面体，四个四面体面积之和等于大的四面体的面积，根据面积占比去划分各部分的权重**
 本文都假定顶点排序按照01234567（从下到上，顺时针旋转）
 将大的立方体拆分成小的立方体，每个立方体总共八个顶点，分别存在8个sram中，然后根据像素位置来取顶点值进行计算，**LUT表是11bit，有符号数**
@@ -102,4 +100,72 @@ idxP2 = {iR+Rmed, iG+Gmed, B+Bmedi} //当前立方体从原点向非RGB最小分
 idxP3 = {iR+1, iG+1, iB+1}
 最终四个坐标组成一个立方锥，然后插值（但是感觉这个算法不对劲）
 RGB分量最大值方向（也就是最接近的顶点）乘以该分量的系数，中间分量和小分量分别乘以各自的系数。（实际就是四个顶点，哪个离得近哪个占比高，加权累加）
+```
+
+
+Opus4.7
+```
+按 LSB 分 bank 后，每个维度上偶数/奇数索引点数不同：
+
+  索引 0,2,4,...,16  →  9 个点 (LSB=0)
+  索引 1,3,5,...,15  →  8 个点 (LSB=1)
+
+  8 个 bank 的大小因此各异：
+
+  ┌─────────────────┬──────────────┬──────┐
+  │ Bank (bz,by,bx) │ Wz × Wy × Wx │ 深度 │
+  ├─────────────────┼──────────────┼──────┤
+  │ 000             │ 9×9×9        │ 729  │
+  ├─────────────────┼──────────────┼──────┤
+  │ 001 / 010 / 100 │ 8/9 的组合   │ 648  │
+  ├─────────────────┼──────────────┼──────┤
+  │ 011 / 101 / 110 │              │ 576  │
+  ├─────────────────┼──────────────┼──────┤
+  │ 111             │ 8×8×8        │ 512  │
+  └─────────────────┴──────────────┴──────┘
+
+  合计 = 4913 = 17³ ✓
+
+  若所有 bank 都用最大的 729 深 SRAM，面积浪费 ≈ 18.7%（5832 vs 4913）。要省面积就得让每个 bank 用自己的真实大小。
+
+  ---
+  2. 每个 Bank 的维度（硬连线常数）
+
+  对 bank b = (bz, by, bx)：
+
+  Wx(bx) = 9 if bx==0 else 8
+  Wy(by) = 9 if by==0 else 8
+  Wz(bz) = 9 if bz==0 else 8   // 深度方向不参与地址 stride，只决定 SRAM 深度
+
+  这 3 个值在 RTL 里是每个 bank 独立的常数，不是运行时变量。
+
+  ---
+  3. 顶点坐标 → Bank 内坐标
+
+  设输入坐标 (x0, y0, z0)，拆分：
+
+  x_hi = x0 >> 1,   x_lo = x0[0]
+  y_hi = y0 >> 1,   y_lo = y0[0]
+  z_hi = z0 >> 1,   z_lo = z0[0]
+
+  对 bank b 分到的那个顶点，它的真实坐标是 x0 + dx，其中 dx = bx ^ x_lo。
+
+  关键恒等式（关于 >>1 的进位）：
+
+  (x0 + dx) >> 1  =  x_hi + (x_lo & ~bx)
+
+  验证：
+  - x_lo=0（x0 偶）：结果恒为 x_hi，无论 bx 取 0/1 ✓
+  - x_lo=1（x0 奇）：bx=1 取同一偶格（dx=0）→ x_hi；bx=0 取下一偶格（dx=1）→ x_hi+1 ✓
+
+  所以 bank 内三维坐标 只是 x_hi/y_hi/z_hi 加上一个 1-bit 可能的进位，加法器退化为一个 1-bit 加法（本质就是看情况 +1）：
+
+  X_b = x_hi + (x_lo & ~bx)      // 1-bit incrementer
+  Y_b = y_hi + (y_lo & ~by)
+  Z_b = z_hi + (z_lo & ~bz)
+
+  ---
+  4. Bank 内线性地址
+
+  addr_b = Z_b * (Wy(by) * Wx(bx))  +  Y_b * Wx(bx)  +  X_b
 ```
