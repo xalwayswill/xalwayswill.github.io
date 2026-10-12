@@ -25,13 +25,13 @@ lut_7 | 8x8x8=512
 首先根据RGB值对应的index，xyz来从sram中取数据，如果x为奇数，则在x轴方向取顶点0，2，4，6时多向后一个index，如果y为奇数，则在y轴方向取顶点0，1，4，5时向后一个index，如果z为奇数，则在取顶点0，1，2，3时向后一个index，也就得到如下所示的index计算方法
 ```
 addr_lut_0 = (x+x_odd) + (y+y_odd)*9 + (z+z_odd)*81
-addr_lut_1 = x               + (y+y_odd)*9 + (z+z_odd)*72
-addr_lut_2 = (x+x_odd) +               y*8 + (z+z_odd)*72
-addr_lut_3 = x               +               y*8 +  (z+z_odd)*64
-addr_lut_4 = (x+x_odd) + (y+y_odd)*9 +                z*81
-addr_lut_5 = x               + (y+y_odd)*9 +                z*72
-addr_lut_6 = (x+x_odd) +               y*9 +                z*72
-addr_lut_7 = x               +               y*8 +                z*64
+addr_lut_1 = x         + (y+y_odd)*9 + (z+z_odd)*72
+addr_lut_2 = (x+x_odd) +  y*8        + (z+z_odd)*72
+addr_lut_3 = x         +  y*8        + (z+z_odd)*64
+addr_lut_4 = (x+x_odd) + (y+y_odd)*9 + z*81
+addr_lut_5 = x         + (y+y_odd)*9 + z*72
+addr_lut_6 = (x+x_odd) + y*9         + z*72
+addr_lut_7 = x         + y*8         + z*64
 ```
 在从SRAM中取出对应的lut值后，由于不同的pixel落在的位置不同，取出的8个顶点坐标顺序需要重新排列，例如cude(1,0,0)的顶点0的坐标是cude(0,0,0)的顶点3，**因此需要根据pixel计算出来的xyz的奇偶性，来对读出的顶点坐标进行不同的重排列，然后进行插值（并不是三线性差值，寻找当前点所在的立方锥也就是四面体进行插值，不是立方体而是四面体）**。
 | target | equal | code (xyz)|
@@ -101,4 +101,4 @@ idxP2 = {iR+Rmed, iG+Gmed, B+Bmedi} //当前立方体从原点向非RGB最小分
 idxP3 = {iR+1, iG+1, iB+1}
 最终四个坐标组成一个立方锥，然后插值（但是感觉这个算法不对劲）
 RGB分量最大值方向（也就是最接近的顶点）乘以该分量的系数，中间分量和小分量分别乘以各自的系数。（实际就是四个顶点，哪个离得近哪个占比高，加权累加）
-```
+
