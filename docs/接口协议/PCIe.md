@@ -31,3 +31,4 @@ PCIe 采用基于数据包完成两个组件之间的数据传输，PCIe是异�
 * Elastic Buffer来同步恢复时钟和本地时钟造成的数据速率差异，通过插入或者删除SKIP序列
 * 接收端的数据链路层并不需要管理FC buffer，因为FC buffer 是区分P/NP/CPL的，这些需要事务层去解析，发送端数据链路层只需要维护我还能发送多少TLP，接收端数据链路层维护我已经释放了多少Credit，发送端事务层只需要告诉数据链路层有一个TLP要发，接收端事务层只需要告诉数据链路层有一个buffer空间释放了，其余的credit计数维护都在数据链路层维护，而实际的FC buffer则是在传输层
 * Replay Buffer（ACK/NAK）属于数据链路层，Flow Control（FC buffer）属于事务层，updateFC在数据链路层，ACK/NAK的发送也不参考Credit的容量
+* base spec中画的 *Receive Data Link layer Handling of TLPS FLowchart* 中对于发送端物理层已经nullified的包，仍然检查CRC，这种常见于switch转发，为了优化延迟在没有检测包正确性的情况下就转发出来，在确认包存在问题时告知下游设备当前包有问题废掉，之所以还要对这类包做LCRC的检查主要是为了避免隐藏链路问题，EDB包对应的LCRC有特殊处理，EDB与LCRC的共同使用能够保证即使发送EDB包的时候仍然能识别出来是否链路有问题，即使是EDB包如果传输链路出了错误LCRC比对不上也要NAK重发
