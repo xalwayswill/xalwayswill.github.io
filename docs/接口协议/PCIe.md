@@ -1,4 +1,8 @@
 # PCIe 协议学习
+[PCI Exress体系结构导读]
+[PCI Express Technology]
+[PCI Express® Base Specification Revision 6.0]
+
 ## Chapter 2 - Transaction Layer
 ### 2.2: Translation Layer protocal -- Pcaket Definition
 PCIe 采用基于数据包完成两个组件之间的数据传输，PCIe是异步的，请求和响应分离，所以需要不同结构的TLP。需要传输事务通过Requests 和 Completions完成，Completions只有在有Reqired才会传输，同事cmpl需要和对应的requests的transaction ID和packet header保持相同。
