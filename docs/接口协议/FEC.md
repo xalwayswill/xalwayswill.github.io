@@ -97,8 +97,7 @@ RS(254, 250) 在 GF(2¹⁰) = GF(1024) 上，可纠 t = (254−250)/2 = 2 个错
   硬件不会按原始公式一路算指数再累加，全部用 Horner 展开，逐 symbol 累加：
 
   $$
-  S_j = (((r_{253} \cdot \alpha^j + r_{252}) \cdot \alpha^j + r_{251}) \cdot \alpha^j + \cdots
-  + r_1) \cdot \alpha^j + r_0
+  S_j = (((r_{253} \cdot \alpha^j + r_{252}) \cdot \alpha^j + r_{251}) \cdot \alpha^j + \cdots + r_1) \cdot \alpha^j + r_0
   $$
 
   等价的递推：
