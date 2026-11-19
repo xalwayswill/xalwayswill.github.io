@@ -73,6 +73,9 @@ RS(254, 250) 在 GF(2¹⁰) = GF(1024) 上，可纠 t = (254−250)/2 = 2 个错
   S_j = r(\alpha^j) = \sum_{m=0}^{253} r_m \cdot \alpha^{j \cdot m}, \quad j = 0, 1, 2, 3
   $$
 ```
+<div style={{textAlign: 'center', margin: '1.5rem 0', fontFamily: 'serif', fontSize: '1.1rem'}}>
+  S<sub>j</sub> = r(α<sup>j</sup>) = <span style={{fontSize: '1.4rem'}}>∑</span><sub>m=0..253</sub> r<sub>m</sub> · α<sup>j·m</sup> , &nbsp;&nbsp;&nbsp;&nbsp; j = 0, 1, 2, 3
+</div>
   4 个展开式：
 ```
   S_0 = r_0 + r_1       + r_2       + ... + r_253
@@ -90,6 +93,9 @@ RS(254, 250) 在 GF(2¹⁰) = GF(1024) 上，可纠 t = (254−250)/2 = 2 个错
   S_j = e(\alpha^j) = \sum_{\text{错位 } i} Y_i \cdot \alpha^{j \cdot i}
   $$
   ```
+<div style={{textAlign: 'center', margin: '1.5rem 0', fontFamily: 'serif', fontSize: '1.1rem'}}>
+  S<sub>j</sub> = e(α<sup>j</sup>) = <span style={{fontSize: '1.4rem'}}>∑</span><sub>错位 i</sub> Y<sub>i</sub> · α<sup>j·i</sup>
+</div>
   4 个 syndrome 成为 2 组未知数（位置 + 值）的方程，后续 Peterson/BM 就是解它。
 
   2. 用 Horner 法改写 — 硬件实现的真正形式
@@ -100,6 +106,9 @@ RS(254, 250) 在 GF(2¹⁰) = GF(1024) 上，可纠 t = (254−250)/2 = 2 个错
   S_j = (((r_{253} \cdot \alpha^j + r_{252}) \cdot \alpha^j + r_{251}) \cdot \alpha^j + \cdots + r_1) \cdot \alpha^j + r_0
   $$
 ```
+<div style={{textAlign: 'center', margin: '1.5rem 0', fontFamily: 'serif', fontSize: '1.1rem'}}>
+  S<sub>j</sub> = (((r<sub>253</sub> · α<sup>j</sup> + r<sub>252</sub>) · α<sup>j</sup> + r<sub>251</sub>) · α<sup>j</sup> + ··· + r<sub>1</sub>) · α<sup>j</sup> + r<sub>0</sub>
+</div>
   等价的递推：
 ```
   acc_j = 0
