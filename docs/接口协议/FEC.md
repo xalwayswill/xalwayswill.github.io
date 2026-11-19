@@ -85,11 +85,7 @@ RS(254, 250) 在 GF(2¹⁰) = GF(1024) 上，可纠 t = (254−250)/2 = 2 个错
   - α^(j·m) 里的指数要在 mod (2¹⁰ − 1) = mod 1023 下看
 ```
   如果 r = c + e（c 是合法码字，e 是错误图样），因为 c(α^j) = 0，所以：
-```
-  $$
-  S_j = e(\alpha^j) = \sum_{\text{错位 } i} Y_i \cdot \alpha^{j \cdot i}
-  $$
-```
+  $$S_j = e(\alpha^j) = \sum_{\text{错位 } i} Y_i \cdot \alpha^{j \cdot i}$$
   4 个 syndrome 成为 2 组未知数（位置 + 值）的方程，后续 Peterson/BM 就是解它。
 
   2. 用 Horner 法改写 — 硬件实现的真正形式
