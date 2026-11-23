@@ -6,6 +6,7 @@
 
 
 ## 以RS(15,13) 为例(deepseek)
+
 ```
 RS(15, 13) 是一种定义在 GF(2⁴)（即每个符号为4比特）上的里德-所罗门（Reed-Solomon）码。它的核心参数是：码长 n = 15 个符号，信息长 k = 13 个符号，校验位有 n - k = 2 个符号。
 
@@ -74,9 +75,11 @@ RS(254, 250) 在 GF(2¹⁰) = GF(1024) 上，可纠 t = (254−250)/2 = 2 个错
   S_j = r(\alpha^j) = \sum_{m=0}^{253} r_m \cdot \alpha^{j \cdot m}, \quad j = 0, 1, 2, 3
   $$
 ```
+
 <div style={{textAlign: 'center', margin: '1.5rem 0', fontFamily: 'serif', fontSize: '1.1rem'}}>
   S<sub>j</sub> = r(α<sup>j</sup>) = <span style={{fontSize: '1.4rem'}}>∑</span><sub>m=0..253</sub> r<sub>m</sub> · α<sup>j·m</sup> , &nbsp;&nbsp;&nbsp;&nbsp; j = 0, 1, 2, 3
 </div>
+
   4 个展开式：
 ```
   S_0 = r_0 + r_1       + r_2       + ... + r_253
@@ -88,28 +91,35 @@ RS(254, 250) 在 GF(2¹⁰) = GF(1024) 上，可纠 t = (254−250)/2 = 2 个错
   - 乘法 · 都是 GF(1024) 乘法（本原多项式 DP 用 p(x) = x¹⁰ + x³ + 1）
   - α^(j·m) 里的指数要在 mod (2¹⁰ − 1) = mod 1023 下看
 ```
+
   如果 r = c + e（c 是合法码字，e 是错误图样），因为 c(α^j) = 0，所以：
+
 ```
   $$
   S_j = e(\alpha^j) = \sum_{\text{错位 } i} Y_i \cdot \alpha^{j \cdot i}
   $$
 ```
+
 <div style={{textAlign: 'center', margin: '1.5rem 0', fontFamily: 'serif', fontSize: '1.1rem'}}>
   S<sub>j</sub> = e(α<sup>j</sup>) = <span style={{fontSize: '1.4rem'}}>∑</span><sub>错位 i</sub> Y<sub>i</sub> · α<sup>j·i</sup>
 </div>
+
   4 个 syndrome 成为 2 组未知数（位置 + 值）的方程，后续 Peterson/BM 就是解它。
 
   2. 用 Horner 法改写 — 硬件实现的真正形式
 
   硬件不会按原始公式一路算指数再累加，全部用 Horner 展开，逐 symbol 累加：
+
 ```
   $$
   S_j = (((r_{253} \cdot \alpha^j + r_{252}) \cdot \alpha^j + r_{251}) \cdot \alpha^j + \cdots + r_1) \cdot \alpha^j + r_0
   $$
 ```
+
 <div style={{textAlign: 'center', margin: '1.5rem 0', fontFamily: 'serif', fontSize: '1.1rem'}}>
   S<sub>j</sub> = (((r<sub>253</sub> · α<sup>j</sup> + r<sub>252</sub>) · α<sup>j</sup> + r<sub>251</sub>) · α<sup>j</sup> + ··· + r<sub>1</sub>) · α<sup>j</sup> + r<sub>0</sub>
 </div>
+
   等价的递推：
 ```
   acc_j = 0
